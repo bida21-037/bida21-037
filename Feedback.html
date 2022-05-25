@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title> FILMER CINEMA </title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0e897f21f1.js" crossorigin="anonymous"></script>
+<style>
+    *{margin: 0; padding: 0;font-family: 'Poppins', sans-serif;}
+    nav{display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center
+     }
+nav img{width: 250px;height: 100px}
+nav-links{ flex: 1;
+    text-align: right;}   
+nav ul{list-style-type:none;
+	   }
+nav ul li{float:left;padding: 10px;display: inline-block;}
+    nav ul li:after{content: '';
+                    width:0%;
+                    height: 2px;
+                    background: #ff8906;
+                    display: block;
+                    margin: auto;
+                    transition: 0.5s;}
+    nav ul li:hover:after{width:100%;}
+      a{text-decoration: none; color:#a7a9be; font-size: 13px;}
+    body{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner3.jpg); background-position: center; background-size: cover; position: relative;height:100%; width:100%; text-indent: 30px; padding: 0px; text-decoration-color: #ff8906}
+    .container{width: 80%;
+                margin:20px auto;
+                color: #a7a9be;
+               }
+    .contact-box{background-color: transparent;
+                 display: flex;
+                 color: #a7a9be;}
+    .contact-left{flex-basis: 60%;
+                  padding: 10px;
+                  }
+    .contact-right{flex-basis: 40%;
+                  padding: 10px;
+                  background-color:#020826;
+                  color: #a7a9be;
+                  }
+    h1{margin-bottom: 10px;}
+    .container p{margin-bottom: 10px;
+                }
+    .input-row{display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                }
+    .input-row .input-group{flex-basis: 45%;}
+    input{width: 100%;
+          border: none;
+          border-bottom: 1px solid #ff8906;
+          padding-bottom: 5px;
+          outline: none;
+        }
+    textarea{width: 100%;
+            border: 1px solid #ff8906;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box}
+    label{margin-bottom: 6px;
+          display: block;
+          color: #ff8906;}
+    button{background: #ff8906;
+           width: 100px;
+           border: none;
+            outline: none;
+            color: white;
+            height: 35px;
+            border-radius: 30px;
+            margin-top: 20px;
+            }
+    .contact-left h3{color: #ff8906;
+                     font-weight: 600;
+                     margin-bottom: 30px;
+                    }
+    .contact-right h3{
+                     font-weight: 600;
+                     margin-bottom: 30px;
+                    }
+    .contact-right p{color: #a7a9be;}
+    tr td:first-child{padding-top: 20px;padding: 10px;}
+    tr td{padding-top: 20px;padding: 10px; 
+          color: #a7a9be;}
+</style>
+</head>
+<body>
+    <header>
+         <nav>
+	<a href="Abt.html"> <img src="FC.png"  width=100px  height=100px> </a>  
+    <div class="nav-links">
+       <ul>
+        <li><a href="index.html.html"> HOME </a></li>
+        <li><a href="about.html"> ABOUT </a></li>
+        <li><a href="nwshow.html"> MOVIES </a></li>
+        <li><a href="comingsoon.html"> COMING SOON </a></li>
+        <li><a href="contact.html"> CONTACT US </a></li>
+         <li><a href="Feedback.html"> FEEDBACK </a></li>
+       </ul>
+    </div>
+    </nav>
+    </header>
+    <div class="container">
+    <h1>CONNECT WITH FILMER!</h1>
+    <p> We would love to hear your suggestions and complaints about FILMER.</p>
+    <div class="contact-box">
+        <div class="contact-left">
+        <h3>SEND REQUEST</h3>
+        <form>  
+            <div class="input-row">
+              <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Lorato Mokgatlhe">
+                </div> 
+                <div class="input-group">
+                <label>Phone </label>
+                <input type="text" placeholder="+267 7185 2310">
+                </div>
+            </div>
+                <div class="input-row">
+                <div class="input-group">
+                <label>Email </label>
+                <input type="email" placeholder="loratomokgatlhe4@gmail.com">
+                </div>
+                <div class="input-group">
+                <label>Subject </label>
+                <input type="text" placeholder="Customer Service">
+                </div>
+                </div>
+                <label>Message </label>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+            
+                <button type="submit">SEND </button>
+            </form>
+        </div>
+        <div class="contact-right">
+        <h3>REACH OUT</h3>
+            
+            <table>
+                <tr>
+                <td>Email</td>
+                <td>bida21-037@thuto.bac.ac.bw</td>
+                </tr>
+                <tr>
+                <td>Tell</td>
+                <td> 393 3772</td>
+                </tr>
+                <tr>
+                <td>Address</td>
+                <td> 551, Ground Floor, 5th Path<br>
+                    Motsobonye rd, Gaborone City</td>
+                </tr>
+                
+                
+            </table>
+        </div>
+             
+        </div>
+    </div>
+</body>
+</html>

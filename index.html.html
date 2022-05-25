@@ -1,0 +1,266 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title> FILMER CINEMA </title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0e897f21f1.js" crossorigin="anonymous"></script>
+<style>
+    *{margin: 0; padding: 0;font-family: 'Poppins', sans-serif;}
+header{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner3.jpg); background-position: center; background-size: cover; position: relative;height:100vh; width:100%; text-indent: 30px; padding: 0px; text-decoration-color: #ff8906}
+nav{display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center
+     }
+nav img{width: 250px;height: 100px}
+nav-links{ flex: 1;
+    text-align: right;}   
+nav ul{list-style-type:none;
+	   }
+nav ul li{float:left;padding: 10px;display: inline-block;}
+    nav ul li:after{content: '';
+                    width:0%;
+                    height: 2px;
+                    background: #ff8906;
+                    display: block;
+                    margin: auto;
+                    transition: 0.5s;}
+    nav ul li:hover:after{width:100%;}
+.text-box{width: 90%; color: #a7a9be; position: absolute;top: 80%;left: 50%;transform: translate(-50%,-50%); text-align: center;}
+.text-box h1{font-size: 52px;}
+.text-box p{margin: 10px 0 40px; font-size: 15px; color: #a7a9be;}
+.hero-btn{display: inline-block; 
+          text-decoration: none;
+          text-align: center;
+          list-style-type: none;
+          color: white; 
+          border: 1px solid white;
+          padding: 10px 32px;
+          font-size: 15px;
+          background: transparent;
+          position: relative;
+          cursor: pointer;}
+    .hero-btn:hover{border: 1px solid #ff8906; background: #ff8906; transition: 1s;
+                    }
+    @media(max-width: 700px) {
+        .text-box h1{font-size: 18px;}
+        .nav-links ul li{display: block} 
+        .nav-links {position: absolute; background:#ff8906; height: 100vh; width: 200px; top: 0; right: 0; text-align: left; z-index: 2;}
+    }
+article{background-color:#fffffe;
+	 }
+    .Movies{width: 80%; margin: auto; text-align: center;padding-top: 100px;}
+    h2{font-size: 36px; font-weight: 600; color: #a7a9be; text-align: center; }
+    p{color:#a7a9be ; font-size:16px; font-weight: 300; line-height: 22px; padding: 10px;}
+    a{text-decoration: none; color:#a7a9be; font-size: 13px;}
+    #Row{ margin-top: 5%; display:flex; justify-content:space-between;color: #a7a9be;}
+    #categ-col{background: #454179; flex-basis: 20%; border-radius: 10px; margin-bottom: 5%;margin-left: 10px;margin-right: 10px; padding: 10px 9px;box-sizing: content-box;}
+        h3{text-align: center; font-weight: 600; margin: 10px 0;}
+        p{text-align: center;}
+        #categ-col:hover{box-shadow: 0 0 20px 0px rgba(255,137,6,100);}
+    #Moviecol1 img{
+      width: 255px;
+      height:255px;
+        border-radius: 10px;}
+    #movie1{float: left;padding: 40px;}
+    #SERVICES{width: 80%; 
+              margin: auto;
+              text-align: center;
+              padding-top: 100px;}
+    #servicescol{flex-basis: 31%;
+                 border-radius: 10px;
+                 margin-bottom: 5%;
+                 text-align: left;}
+    #servicescol img{width: 100%;
+                     border-radius: 10px;}
+    #servicescol p{padding: 0;}
+    #servicescol h3{margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-align: left;}
+    #Testimonials {width: 80%;
+                   margin: auto;
+                   padding-top: 100px;
+                   text-align: center;
+    }
+    #Testimonials h1{color: #a7a9be;
+    }
+    .Tesimonial-col{flex-basis: 44%;
+                    border-radius: 30px;
+                    margin-bottom: 5%;
+                    text-align: left;
+                    padding: 30px;
+                    cursor: pointer;
+                    display:flex;
+                    float: left;
+    }
+    .Tesimonial-col img{height: 40px;
+                        margin-left: 5px;
+                        margin-right: 30px;
+                        border-radius: 50%;}
+    .Tesimonial-col p{ padding: 0;}
+    .Tesimonial-col h3{color: #ff8906;
+                       margin-top: 15px;
+                       text-align: left;}
+    .Tesimonial-col h4{color:#a7a9be; }
+    .Tesimonial-col .fa-solid{color: gold;}
+    @media(max-width: 700px){
+        .Tesimonial-col img{
+                        margin-left: 0px;
+                        margin-right: 15px;
+                       }
+        }
+    .Footer{width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            }
+    .Footer h4{margin-bottom: 25px;
+                margin-top: 20px;
+                font-weight: 600;}
+    .icons .fa-brands{color:#a7a9be;
+                      margin: 0 13px;
+                      cursor: pointer;
+                      }
+</style>
+    </head>
+<body>
+<header>
+    <nav>
+	<a href="Abt.html"> <img src="FC.png"  width=100px  height=100px> </a>  
+    <div class="nav-links">
+       <ul>
+        <li><a href="index.html.html"> HOME </a></li>
+        <li><a href="about.html"> ABOUT </a></li>
+        <li><a href="nwshow.html"> MOVIES </a></li>
+        <li><a href="comingsoon.html"> COMING SOON </a></li>
+        <li><a href="contact.html"> CONTACT US </a></li>
+         <li><a href="Feedback.html"> FEEDBACK </a></li>
+        
+       </ul>
+    </div>
+    </nav>
+    <div class="text-box">
+    <h1> VENOM NOW IN CINEMA</h1>
+    <p>A failed reporter is bonded to an alien entity, one of many symbiotes who have invaded Earth.<br> But the being takes a liking to Earth and decides to protect it.</p>
+    <a href="nwshow.html" class="hero-btn">SEE MORE...</a>
+    </div>
+</header>
+
+<article>
+<div id="MOVIES">
+<h2> MOVIE CATEGORIES </h2>
+<p>Every week we get new movies showing in our cinema. Some even stay a while in our so meet our vaulable clients demands!<br> Have a look and don't hesitate to give us a call. HAPPY SCREENING MOVIE-FANATICS!</p>
+    <div id="Row">
+        <div id="categ-col">
+         <a href="action.html">
+        <h3> ACTION </h3>
+            <p> A genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases. </p>
+            </a>
+        </div>
+        <div id="categ-col">
+         <a href="SCIFI.html">
+        <h3> SCI-FI </h3>
+        <p>  Film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, spacecraft, robots, cyborgs, interstellar travel or other technologies.</p>
+            </a>
+        </div>
+        <div id="categ-col">
+        <a href="animation.html">
+        <h3> ANIMATION </h3>
+        <p>Cartoons can take us to different worlds, times and dimensions, all without ever leaving the couch. Get ready for laughs, adventure and loads of fun! Catch! </p>
+            </a>
+        </div>
+        <div id="categ-col">
+        <a href="horror.html">
+        <h3> HORROR </h3>
+        <p>  Fiction in any medium intended to scare, unsettle, or horrify the audience. Historically, the cause of the "horror" experience has often been the intrusion of a supernatural element into everyday human experience.</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="Moviecol">
+</div>
+  <div id="Moviecol1"> 
+      <h2>SHOWING MOVIES</h2> 
+                   <div id="movie1"> 
+                       <img src="ACT1.jpg" alt="movie1">
+                    </div>
+                   <div id="movie1">
+                       <img src="SCIFI1.jpg" alt="movie2" >
+                   </div>
+                   <div id="movie1">
+                       <img src="ANI1.jpg" alt="movie3">
+                   </div>
+                   <div id="movie1">
+                       <img src="HOR1.jpg" alt="movie4">
+                   </div>
+    </div>
+    
+    
+    <div id= "SERVICES">
+    <h2>FIMLER SERVICES</h2>
+        <div id="row">
+        <div id="servicecol">
+        <img src="advertise.jpg">
+        <h3>ADVERTISING</h3>
+        <p>Shown prior to a theater's coming attractions, movie theater advertising allows you to display your ad big, backlit, in full motion and without any competing ads or visual clutter to get in the way.</p>
+        </div>
+         <div id="servicecol">
+        <img src="conference.jpg">
+        <h3>CONFERENCES</h3>
+        <p> Conferences Worldwide Upcoming events in film studies,film study,film,film making,cinema and related fields</p>
+        </div>
+         <div id="servicecol">
+        <img src="theater.jpg">
+        <h3>Parties</h3>
+        <p>FILMER offers the best cinematic experience in digital 2D, 3D, IMAX, 4DX.We even cater to kiddies parties! Check out movie showtimes and ring us up for a Quote TODAY!</p>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div id="Testimonials">
+     <h1> What Our Customer Says </h1>
+     <p>Some feedback we get from customers </p>
+        <div class="row">
+            <div class="Tesimonial-col">
+           <img src="User1.jpg">
+            <div>
+            <p> Thumbs Up from me! Great experience with my Family.</p>
+            <h3>Evan Jackson </h3>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            </div>
+             <div class="Tesimonial-col">
+           <img src="User2.jpg">
+            <div>
+            <p> I will be coming back again! Great Service!</p>
+            <h3>Emma Stone </h3>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i> 
+            </div>
+            </div>
+        </div>
+    </div>
+<section class="Footer">
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <h4> ABOUT US </h4>
+    <p>It’s showtime! FILMER is here to serve up movie memories with friends and family.<br> Come enjoy Coca-Cola Freestyle and delicious menu items like pretzel bites,<br>movie nachos, and annual refillable popcorn buckets, all at a great value.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    <p> Made By Lorato Mokgatlhe </p>
+
+</section>
+    </article>
+</body>
+</html>
